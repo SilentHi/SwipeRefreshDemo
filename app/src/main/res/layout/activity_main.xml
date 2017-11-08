@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_top_tool_bar"/>
+
+    <com.zevol.swiperefreshdemo.HomeViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.zevol.swiperefreshdemo.HomeViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_01"
+        android:layout_gravity="center_vertical"
+        android:background="#d8d8d8"/>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            style="@style/rb_stylr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_radio_button_setting"
+            android:text="设置"/>
+
+        <RadioButton
+            android:id="@+id/rb2"
+            style="@style/rb_stylr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_radio_button_home"
+            android:text="首页"/>
+
+        <RadioButton
+            android:id="@+id/rb3"
+            style="@style/rb_stylr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_radio_button_user_center"
+            android:text="我"/>
+    </RadioGroup>
+</android.support.v7.widget.LinearLayoutCompat>

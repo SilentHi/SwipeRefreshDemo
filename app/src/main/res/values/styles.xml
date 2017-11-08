@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="rb_stylr">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/dp_04</item>
+        <item name="android:textColor">@color/radio_button_choose_home_type_tv_color_selector</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingBottom">@dimen/dp_04</item>
+    </style>
+
+
+</resources>
